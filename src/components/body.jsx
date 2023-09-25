@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Index from "./components/index";
+import Index from "./index";
+import Quiz from "./quiz";
 
 function Body() {
 
@@ -7,7 +8,9 @@ function Body() {
         <div>
             <Index />
             <button onClick={() => setBody(
-                <div></div>
+                <div>
+                    <Quiz />
+                </div>
             )}>Démarrer</button>
         </div>
     )
